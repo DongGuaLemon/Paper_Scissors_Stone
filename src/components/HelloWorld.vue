@@ -30,6 +30,7 @@
 </template>
 
 <script>
+//import stone from '@/assets/stone.PNG'
 export default {
   name: 'HelloWorld',
   props: {
