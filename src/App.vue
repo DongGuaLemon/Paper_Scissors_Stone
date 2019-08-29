@@ -36,14 +36,18 @@ export default {
       scissor:require('./assets/scissor.png'),
       user_score:0,
       comp_score:0,
-      result:"Choice your choice!!"
+      result:"Choice your choice!!",
+      body:[
+        {names:'Willy',
+        join_date:'2019/03/04'},
+        {names:'Tom',join_date:'2019/03/05'}
+      ]
     }
   },
   methods: {
     choice(e){
       let user = e ;
       let comp = this.compchoice();
-      let vm = this;
       switch(user + comp){
         case "rs":
         case "pr":
@@ -84,13 +88,7 @@ export default {
       if(letter==="p") return "Paper"
         return "Scssiors"
     }
-  },
-  computed: {
-    
-  },
-  mounted() {
-    this.compchoice();
-  },
+  }
 }
 </script>
 
